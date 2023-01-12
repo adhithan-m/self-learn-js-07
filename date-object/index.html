@@ -1,0 +1,38 @@
+<html>
+<head>
+<script type ="text/javascript">
+
+var mydate=new Date();
+
+document.write("<h2> Today's Date and Time:</h2>"+""+mydate+"<br>");
+document.write("<h2> toLocaleString</h2>"+""+mydate.toLocaleString()+"<br>");
+document.write("<h2> getDate()</h2>"+""+mydate.getDate()+"<br>");
+document.write("<h2> getMonth()</h2>"+""+mydate.getMonth()+"<br>");
+document.write("<h2> getFullYear()</h2>"+""+mydate.getFullYear()+"<br>");
+
+document.write("<h2> toStringDate(): </h2>"+""+mydate.toDateString()+"<br>");
+
+var hrs=mydate.getHours();
+var min=mydate.getMinutes();
+var sec=mydate.getSeconds();
+
+document.write("<h2>Current Time is: </h2>"+""+hrs+":"+min+":"+sec+"<br>");
+
+var mydate1= new Date();
+document.write("<h2> Today's Date and Time:</h2>"+""+mydate+"<br>");
+mydate.setDate(29);
+document.write("<h2> After setDate():</h2>"+""+mydate+"<br>");
+mydate.setMonth(7);
+document.write("<h2> After setMonth():</h2>"+""+mydate+"<br>");
+mydate.setFullYear(2024);
+document.write("<h2> After setFullYear():</h2>"+""+mydate+"<br>");
+mydate.setHours(12);
+document.write("<h2> After setHours():</h2>"+""+mydate+"<br>");
+mydate.setMinutes(30);
+document.write("<h2> After setminutes():</h2>"+""+mydate+"<br>");
+mydate.setSeconds(30);
+document.write("<h2> After setSeconds():</h2>"+""+mydate+"<br>");
+
+</script>
+</head>
+</html>
